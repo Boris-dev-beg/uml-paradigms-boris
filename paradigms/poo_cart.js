@@ -16,7 +16,7 @@ class Cart {
     get_total(){
         let total = 0;
         this.products.map((prop)=> (
-            total += prop.price
+            total += (prop.price * prop.quantity)
         ))
         return total;
     }

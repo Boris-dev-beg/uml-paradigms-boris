@@ -3,19 +3,19 @@ const Products_list = [
         id: 1,
         name: "Product 1",
         price: 40000,
-        quantity: 0
+        quantity: 1
     },
     {
         id: 2,
         name: "Product 2",
         price: 10000,
-        quantity: 0
+        quantity: 3
     },
     {
         id: 3,
         name: "Product 3",
         price: 7000,
-        quantity: 0
+        quantity: 5
     }
 ];
 
@@ -23,7 +23,7 @@ const Products_list = [
 function Cal_Total_Cost(Products_list = []) {
     let total = 0;
     Products_list.map((product) => (
-        total += product.price
+        total += (product.price * product.quantity)
     ))
     return total;
 }
