@@ -25,8 +25,8 @@ let discount = 0;
 let final_cost = 0;
 
 // ! Looping through the products list to calculate the total cost
-for (let i=0; i<= Products_list.length; i++){
-    total_cost += Products_list[i].price
+for (let i=0; i< Products_list.length; i++){
+    total_cost += Products_list[i].price * Products_list[i].quantity
 }
 
 console.log(`The total cost is: ${total_cost}.`)
